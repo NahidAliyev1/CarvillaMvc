@@ -1,0 +1,60 @@
+﻿@using CarvillaMVC.MVC.Models
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@addTagHelper *, AuthoringTagHelpers
+@model FeaturedCars
+<!-- Table Start -->
+<div class="container-fluid pt-4 px-4">
+    <div class="row g-4">
+
+        <div class="col-12">
+            <div class="bg-secondary rounded h-100 p-4">
+                <h6 class="mb-4">Featured Cars</h6>
+                <a asp-area="Admin" asp-controller="FeaturedCars" asp-action="Create"> Add Featured <code>Cars</code> </a>
+                <div class="table-responsive">
+
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Image</th>
+                                <th scope="col">Model</th>
+                                <th scope="col">Mileage</th>
+                                <th scope="col">Spead</th>
+                                <th scope="col">SpeedBoxCategory</th>
+                                <th scope="col">CarName</th>
+                                <th scope="col">Price</th>
+                                <th scope="col">Description</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            
+                                    <tr>
+                                        <th scope="row">@Model.Id</th>
+                                        <td>@Model.ImgPath</td>
+                                        <td>@Model.Model</td>
+                                        <td>@Model.Mileage</td>
+                                        <td>@Model.Speed</td>
+                                        <td>@Model.SpeedBoxCategory</td>
+                                        <td>@Model.CarName</td>
+                                        <td>@Model.Price</td>
+                                        <td>@Model.Description</td>
+                                        <td>
+                                            <a asp-area="Admin" asp-controller="FeaturedCars" asp-action="Info" asp-route-id="@Model.Id" class="btn btn-info m-2">Info</a>
+                                            <a asp-area="Admin" asp-controller="FeaturedCars" asp-action="Create" asp-route-id="@Model.Id" class="btn btn-warning m-2">Update</a>
+                                            <a asp-area="Admin" asp-controller="FeaturedCars" asp-action="Delete" asp-route-id="@Model.Id" class="btn btn-danger m-2">Delete</a>
+
+
+                                        </td>
+                                    </tr>
+
+                            
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Table End -->

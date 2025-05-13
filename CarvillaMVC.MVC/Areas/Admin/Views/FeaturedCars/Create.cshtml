@@ -1,0 +1,44 @@
+﻿@using CarvillaMVC.MVC.Models
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@addTagHelper *, AuthoringTagHelpers
+@model FeaturedCars
+
+<div class="col-sm-12 col-xl-6">
+    <div class="bg-secondary rounded h-100 p-4">
+        <h6 class="mb-4">Create Form</h6>
+        <form asp-area="Admin" asp-controller="FeaturedCars" asp-action="Create" method="post">
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Image</label>
+                <input asp-for ="ImgPath" class="form-control" id="exampleInputEmail1"
+                       aria-describedby="emailHelp">
+                <label for="exampleInputEmail1" class="form-label">Model</label>
+                <input asp-for ="Model" class="form-control" id="exampleInputEmail1"
+                       aria-describedby="emailHelp">
+                       <label for="exampleInputEmail1" class="form-label">Mileage</label>
+                <input asp-for ="Mileage" class="form-control" id="exampleInputEmail1"
+                       aria-describedby="emailHelp">
+                       <label for="exampleInputEmail1" class="form-label">Speed</label>
+                <input asp-for ="Speed" class="form-control" id="exampleInputEmail1"
+                       aria-describedby="emailHelp">
+                       <label for="exampleInputEmail1" class="form-label">SpeedBox Category</label>
+                <input asp-for ="SpeedBoxCategory" class="form-control" id="exampleInputEmail1"
+                       aria-describedby="emailHelp">
+                       <label for="exampleInputEmail1" class="form-label">Car Name</label>
+                <input asp-for ="CarName" class="form-control" id="exampleInputEmail1"
+                       aria-describedby="emailHelp">
+                       <label for="exampleInputEmail1" class="form-label">Price</label>
+                <input asp-for ="Price" class="form-control" id="exampleInputEmail1"
+                       aria-describedby="emailHelp">
+                       <label for="exampleInputEmail1" class="form-label">Description</label>
+                <input asp-for ="Description" class="form-control" id="exampleInputEmail1"
+                       aria-describedby="emailHelp">
+
+
+
+                
+            </div>
+            
+            <button type="submit" class="btn btn-primary">Create</button>
+        </form>
+    </div>
+</div>

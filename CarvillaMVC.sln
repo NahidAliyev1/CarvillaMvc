@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35825.156 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarvillaMVC.MVC", "CarvillaMVC.MVC\CarvillaMVC.MVC.csproj", "{916C2BD9-AAC7-4713-B356-A133ED64A785}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{916C2BD9-AAC7-4713-B356-A133ED64A785}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{916C2BD9-AAC7-4713-B356-A133ED64A785}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{916C2BD9-AAC7-4713-B356-A133ED64A785}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{916C2BD9-AAC7-4713-B356-A133ED64A785}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9BFDC2B2-2033-44B7-8E7C-D3151B7B15E7}
+	EndGlobalSection
+EndGlobal
